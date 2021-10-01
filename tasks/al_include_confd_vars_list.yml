@@ -67,6 +67,7 @@
     patterns: "{{ al_include_confd_patterns }}"
     excludes: "{{ al_include_confd_excludes }}"
   delegate_to: localhost
+  become: false
   register: result
 
 - name: "Al_include_confd_vars_list: Create list of configuration files"
@@ -86,6 +87,7 @@
     paths: "{{ al_include_confd_dir }}"
     patterns: "{{ al_include_confd_patterns }}"
   delegate_to: localhost
+  become: false
   register: result
 
 - name: "Al_include_confd_vars_list: Add list of configuration links"
