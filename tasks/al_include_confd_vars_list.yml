@@ -66,6 +66,7 @@
 
 - name: "Al_include_confd_vars_list: Find configuration files."
   delegate_to: localhost
+  become: false
   register: result
   ansible.builtin.find:
     file_type: file
@@ -86,6 +87,7 @@
 
 - name: "Al_include_confd_vars_list: Find configuration links."
   delegate_to: localhost
+  become: false
   register: result
   ansible.builtin.find:
     file_type: link
