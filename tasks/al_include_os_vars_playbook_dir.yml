@@ -26,9 +26,9 @@
   vars:
     msg: |-
       playbook_dir {{ playbook_dir }}
-      ansible_os_family: {{ ansible_os_family }}
-      ansible_distribution: {{ ansible_distribution }}
-      ansible_distribution_release: {{ ansible_distribution_release }}
+      ansible_os_family: {{ ansible_facts['os_family'] }}
+      ansible_distribution: {{ ansible_facts['distribution'] }}
+      ansible_distribution_release: {{ ansible_facts['distribution_release'] }}
   ansible.builtin.debug:
     msg: "{{ '{}'.format(msg) }}"
 
@@ -39,9 +39,9 @@
   vars:
     _file: "{{ lookup('ansible.builtin.first_found', params) }}"
     _files:
-      - "{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml"
-      - "{{ ansible_distribution }}.yml"
-      - "{{ ansible_os_family }}.yml"
+      - "{{ ansible_facts['distribution'] }}-{{ ansible_facts['distribution_release'] }}.yml"
+      - "{{ ansible_facts['distribution'] }}.yml"
+      - "{{ ansible_facts['os_family'] }}.yml"
       - default.yml
       - defaults.yml
     params:
@@ -63,9 +63,9 @@
   vars:
     _file: "{{ lookup('ansible.builtin.first_found', params) }}"
     _files:
-      - "{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml"
-      - "{{ ansible_distribution }}.yml"
-      - "{{ ansible_os_family }}.yml"
+      - "{{ ansible_facts['distribution'] }}-{{ ansible_facts['distribution_release'] }}.yml"
+      - "{{ ansible_facts['distribution'] }}.yml"
+      - "{{ ansible_facts['os_family'] }}.yml"
       - default.yml
       - defaults.yml
     params:
