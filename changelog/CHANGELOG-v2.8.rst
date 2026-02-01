@@ -19,6 +19,7 @@ Major Changes
 Minor Changes
 -------------
 * Update ansible_facts variables.
+* Update ansible-lint local configuration.
 
 
 2.8.0
