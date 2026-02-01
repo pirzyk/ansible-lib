@@ -18,6 +18,7 @@ Major Changes
 
 Minor Changes
 -------------
+* Update ansible_facts variables.
 
 
 2.8.0
