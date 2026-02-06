@@ -5,6 +5,14 @@ vbotka.ansible_lib 2.8 Release Notes
 .. contents:: Topics
 
 
+2.8.2
+=====
+
+Release Summary
+---------------
+Supported FreeBSD versions: 13.5, 14.3, 15.0
+
+
 2.8.1
 =====
 

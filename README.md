@@ -15,7 +15,7 @@ Feel free to [share your feedback and report issues](https://github.com/vbotka/a
 
 ## Description
 
-This role is a collection of independent tasks. The purpose is providing a library of reusable tasks
+This role is a collection of independent tasks. The purpose is to provide a library of reusable tasks
 that can be included in playbooks and other roles. For example,
 
 ```yaml
