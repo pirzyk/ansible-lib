@@ -5,6 +5,20 @@ vbotka.ansible_lib 2.8 Release Notes
 .. contents:: Topics
 
 
+2.8.3
+=====
+
+Release Summary
+---------------
+Maintenace update.
+
+Major Changes
+-------------
+
+Minor Changes
+-------------
+
+
 2.8.2
 =====
 
