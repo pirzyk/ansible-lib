@@ -99,7 +99,6 @@
 
 # Get list of directories - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - name: "Al_include_dir_vars: Get list of directories."
-  delegate_to: localhost
   register: result
   ansible.builtin.find:
     paths: "{{ al_include_dir_vars_dir }}"

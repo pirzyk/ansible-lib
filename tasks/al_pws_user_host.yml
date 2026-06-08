@@ -219,7 +219,6 @@
 # Sanity  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 - name: Sanity dependencies.
-  delegate_to: localhost
   run_once: true
   block:
 
